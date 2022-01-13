@@ -166,9 +166,9 @@ def move(name, city="Seattle", state="Washington"):
 
 move("Sydney", "San Diego", "California")
 
-def feed(rat="Jeepers", food="Cheerios")
+def feed(rat="Jeepers", food="Cheerios"):
   msg = "You fed {} some delicious {}"
   msg = msg.format(rat, food)
   print(msg)
 
-feed()
+feed("Terrence", "carrot sticks")
