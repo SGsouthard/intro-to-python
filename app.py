@@ -172,3 +172,6 @@ def feed(rat="Jeepers", food="Cheerios"):
   print(msg)
 
 feed("Terrence", "carrot sticks")
+
+print (add(4,5))
+total = add(4,5)
