@@ -122,22 +122,23 @@ def check_number(num):
 print("Task 5: Problem 15: ", check_number(-420))
 
 # 16
-def fizz_buzz_1(max):
-    for i in range(0, max):
+def fizz_buzz(max):
+    for i in range(max):
         if i % 3 == 0 and i % 5 != 0:
-            print(i)
+            print(i, "fizz")
         elif i % 5 == 0 and i % 3 != 0:
-            print(i)
+            print(i, "buzz")
+        elif i % 5 == 0 and i % 3 == 0:
+            print(i, "fizzbuzz")
 
-print("Task 5: Problem 16: ", fizz_buzz_1(27))
+print("Task 5: Problem 16: ", fizz_buzz(30))
 
 # 17
 def even_caps(sentence):
     new_sentence = ""
 
     for i in range(len(sentence)):
-        if i < len(sentence):
-            char = sentence[i]
+        char = sentence[i]
         if i % 2 == 0:
             capital_char = char.upper()
             new_sentence += capital_char
@@ -145,4 +146,4 @@ def even_caps(sentence):
             new_sentence += char
     return new_sentence
 
-print("Task 5: Problem 16: ", even_caps("Buttstuff"))
+print("Task 5: Problem 17: ", even_caps("Captain America"))
